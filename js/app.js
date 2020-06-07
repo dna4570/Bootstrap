@@ -11,13 +11,13 @@ var btn1 =
 	document.getElementByid("btnid1");
 var btn2 =
 	document.getElementByid("btnid2");
-	 btn1.addEventListener("Click",
- fun_name, false);
-	 btn2b.addEventListener("Click",
+	btn1.addEventListener("Click",
+fun_name, false);
+	btn2b.addEventListener("Click",
 function fun_name()
- {
-	 alert("Function Called");
- }
+{
+	alert("Function Called");
+}
 function autorun()
 {
 if (window.addEventListener) window.addEventListener("load", autorun, false);
@@ -49,3 +49,10 @@ var mySwiper = new Swiper('.swiper-container', {
 	},
 	keyboard: true
 });
+
+new Vue({
+    el: '#app',
+    data: {
+        message: 'Hello VueJS!'
+    }
+})
