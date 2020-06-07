@@ -1,73 +1,338 @@
 <!DOCTYPE html>
-	<html lang="ja">
-		<head>
-			<meta charset="UTF-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<title>My portfolio</title>
-			<!------ BootstrapのCSS読み込み ----->
-			<link href="css/bootstrap.min.css" rel="stylesheet">
-			<!------ jQuery読み込み ------------->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-			<!------ BootstrapのJS読み込み ------>
-			<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<link rel="stylesheet" href="css/normalize.css">
-			<link rel="stylesheet" href="css/style.css">
-			<link rel="shortcut icon" href="images/favicon.ico.png">
-			<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-		</head>
+<html lang="ja">
+<head>
+<title>My Portfolio</title>
+<!-- Required meta tags -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Reasponsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="css/normalize.css">
+<!--<link rel="stylesheet" href="css/style.css" media="screen">-->
+<link rel="shortcut icon" href="images/favicon.ico.png">
+<script src="https://kit.fontawesome.com/9b05599f08.js" crossorigin="anonymous"></script>
+<style>
+.cover {
+    background: url(img/bg.png);
+    background-size: cover;
+}
+body {
+    width: 1200px;
+    height: 500px;
+    font-family: "Open Sans", sans-serif;
+    background-color: lightgray;
+    font-family: verdana;
+    margin: auto;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto 40px auto;
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+.box {
+    width: 300px;
+    height: 54px;
+    background-color: green;
+    float: right;
+    display: block;
+    margin: auto;
+}
+.header-navigation {
+    background-color: black;
+    float: left;
+    width: 1200px;
+    height: 63px;
+    list-style: none;
+}
+.footer {
+    width: 1200px;
+    height: 100px;
+    background-color: gray;
+    color: white;
+    clear: both;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.section {
+    width: 1200px;
+    background-color: gray;
+}
+.flex {
+    display: flex;
+    flex-row wrap;
+    justify-content: space-around;
+}
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container {
+    text-align: center
+}
+    </style>
+</head>
+<body>
+<!--ブレークポイント
+    576px and up: sm
+    768px and up: md
+    992px an up: 1g
+    1200px and up: x1
+-->
 
-		<body>
-			<header>
-				<div class="container">
-					<a href="index.html"><img src="images/CHECK IT .png" width="50" height="50" alt="山ロゴ" /></a>
-					<a href="index.html"><img src="images/Pixel Art.jpg" width="50" height="50" alt="DNAロゴ" /></a>
-					<a href="index.html"><img src="images/CHECK IT .png" width="50" height="50" alt="山ロゴ" /></a>
-					<div class="box">
-						<ul>
-							<li><a href="https://nscript916282270.wordpress.com">BLOG</a></li>
-						</ul>
-					</div>
-		      <ul class="header-navigation">
-		        <li class="nav_left"><a href="index.html">HOME</a></li>
-		        <li class="nav_center"><a href="bio.html">BIO</a></li>
-		        <li class="nav_center"><a href="video.html">VIDEO</a></li>
-		        <li class="nav_center"><a href="music.html">MUSIC</a></li>
-		        <li class="nav_center"><a href="shop.html">SHOP</a></li>
-		        <li class="nav_right"><a href="event.html">EVENT</a></li>
-		      </ul>
-			  </div>
-			</header>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navber-light bg-light">
+    <a class="navbar-brand" href="#"><img src="images/Pixel Art.jpg" width="50" height="50" alt="山ロゴ" /></a>
+        <h1>旭町スタジオ</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-			<div class="container">
-				<h1 class="heading1">Welcome to My Website</h1>
-			    <div class="flex">
-						<img src="images/apple-black-coffee-business-461064.jpg" width="320" height="230" alt="pc">
-						<img src="images/apple-black-coffee-business-461064.jpg" width="320" height="230" alt="pc">
-            <img src="images/apple-black-coffee-business-461064.jpg" width="320" height="230" alt="pc">
-				  </div>
-				<div class="section">
-						<h1 id="heading1">Welcome to My Website</h1>
-			    		<h1 class="heading1">
-			     			This web site is coming along nicely
-			    		</h1>
-			    		<p class="heading">Let's Make something <strong>amazing</strong> with the<em>web!</em></p>
-			    		<p>we are going to have a lot of fun in these vidose learning how to code</p>
-			    		<select name="form_example">
-			      		<option value="Option1">Option 1</option>
-			      		<option value="Option2">Option 2</option>
-			      		<option value="Option3">Option 3</option>
-			    		</select>
-			      	<p>Here's a basic orderd List</p>
-			        <p>Here is a Link to
-			     		<a target="_blank" href="http://www.google.com">Google.com</a> that you can on the web!</p>
-			        <p>You can <a href="mailto:dog@examle.com">send me an email</a> by clicking the previous Link!</p>
-				    	<a href="#" class="btn">&gt;もっと見る</a>
-				</div>
-			</div>
-				<div class="footer">
-					<p>Copyright(C)旭町スタジオ All right Reserved</P>
-					<img src="images/foddaer_34.png" width="230" height="45" alt="logo">
-				</diV>
-		</body>
-	</html>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav_item active">
+                <a href="index.html" class="nav-link">HOME</a></li>
+            <li class="nav_item">
+                <a href="bio.html" class="nav-link">Bio</a></li>
+            <li class="nav_item">
+                <a href="video.html" class="nav-link">Video</a></li>
+            <li class="nav_item">
+                <a href="music.html" class="nav-link">Music</a></li>
+            <li class="nav_item">
+                <a href="shop.html" class="nav-link">Shop</a></li>
+            <li class="nav_item">
+                <a href="event.html" class="nav-link">Event</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- End Nabvigation panel -->
+
+<!-- jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="jumbotron" style="background:url(images/bs-eyecatch.png); background-size:cover;">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+    </div>
+<!--End jumbotron -->
+
+<!-- Team Memvers -->
+<div>
+    <div class="container">
+        <div class="row">
+            <section class="col-12 portfile-pictext-center">
+                <div class="d-flex">
+
+            <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/apple-black-coffee-business-461064.jpg" width="100%" height="180" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'scontent.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/apple-black-coffee-business-461064.jpg" width="100%" height="180" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'scontent.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/apple-black-coffee-business-461064.jpg" width="100%" height="180" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'scontent.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/apple-black-coffee-business-461064.jpg" width="100%" height="180" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/apple-black-coffee-business-461064.jpg" width="100%" height="180" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'scontent.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/apple-black-coffee-business-461064.jpg" width="100%" height="180" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'scontent.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div><!--Endrow-->
+    </div><!--Enoconteiner-->
+</section>
+
+<div class="container">
+    <h2 class="display-4 text-center mb-5">Welcome to My Website</h2>
+        <h3 class="text-center mb-5">This web site is coming soon</h3>
+            <p class="text-center mb-5"">Let's Make something <strong>amazing</strong> with the<em>web!</em></p>
+            <p class=" text-center mb-5">we are going to have a lot of fun in these vidose learning how to code</p>
+</div>
+
+    <div class ="container">
+        <div class="mb-5" row>
+            <h2 class="text-center mb-5">Features</h2>
+            <div class="col">
+            <h3 class="text-center mb-5">Awesome</h3>
+            <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donecsed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac,sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudiciumpurus sit amet fermentum.</p>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section class="bg-light text-center py-5">
+    <div class="container">
+        <h1>Our Services</h1>
+        <div class="row services">
+            <div class="col-md-3 text-center">
+                <div class="icon">
+                    <i class="fa fa-paint-brush fa-3x"></i>
+                </div>
+                <h3>ヒアリング</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores corporis optio nisi dolor vel quidem sunt .</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="icon">
+                    <i class="fa fa-desktop fa-3x"></i>
+                </div>
+                <h3>デザイン</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores corporis optio nisi dolorvel quidem sunt .</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="icon">
+                    <i class="fa fa-line-chart fa-3x"></i>
+                </div>
+                <h3>コーディング</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores corporis optio nisi dolor vel quidem .</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="icon">
+                    <i class="fa fa-tablet fa-3x"></i>
+                </div>
+                <h3>リリース</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores corporis optio nisi dolorvel quidem .</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <section class="bg-light text-center py-5">
+        <div>
+        <h2 class="mb-5">Plans</h2>
+        <div class="container">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Plan A</th>
+                        <th>Plan B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AA</td>
+                        <td>BB</td>
+                    </tr>
+                    <tr>
+                        <td>AAA</td>
+                        <td>BBB</td>
+                    </tr>
+                    <tr>
+                        <td>AAAA</td>
+                        <td>BBBB</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="app">
+                <<p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</<p>
+            </div>
+
+
+    <section class="bg-light text-center py-5">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center text-muted py-4">
+        <p>Copyright(C)旭町スタジオ All right Reserved</P>
+        <img src="images/foddaer_34.png" width="230" height="45" alt="logo" />
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- 商用だと有料らしい　-->
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</body>
+</html>
